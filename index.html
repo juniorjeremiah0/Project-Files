@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremiah Junior's Home Page</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to external styles -->
+    <link rel="stylesheet" href="css/layout.css"> <!-- Link to new layout styles -->
 </head>
 <body>
-
-    <!-- Navigation Bar -->
+    <!-- Sticky Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-avatar">My Avatar</a></li>
+            <li><a href="#learning-experience">My Learning Experience</a></li>
+        </ul>
+    </nav>
     <nav class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
      </nav>
-
-    <!-- Logo -->
-    <div class="logo">
-        <img src="images/logo.png" alt="Site Logo">
-    </div>
+     
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Web Page</h1>
+        <p>This page is a part of my journey to learn web development and to share more about myself, my goals, and the experiences that drive my passion for IT.</p>
+        <!-- Logo -->
+        <img src="images/logo.png" alt="Site Logo" class="logo">
+    </header>
 
     <!-- Main Content -->
-    <div class="content">
-        <aside class="sidebar">
+    <main>
+        <!-- Aside Navigation -->
+        <aside>
             <ul>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#my-avatar">My Avatar</a></li>
@@ -32,40 +44,84 @@
             </ul>
         </aside>
 
-        <main>
-            <section id="about-me">
-                <figure class="float-left">
-                    <img src="images/about-me.jpg" alt="About Me">
-                    <figcaption>A snapshot of my journey.</figcaption>
-                </figure>
-                <h2>About Me</h2>
-                <p>My name is Jeremiah Junior...</p>
-            </section>
+        <!-- About Me Section -->
+        <section id="about-me" class="content-section">
+            <h2>About Me</h2>
+            <figure>
+                <img src="images/about-me.jpg" alt="About Me Image">
+                <figcaption>A snapshot of my journey into IT.</figcaption>
+            </figure>
+            <p>My name is Jeremiah Junior, and I am currently working towards completing an Associate of Applied Science (AAS) in Computer Support...</p>
+        </section>
 
-            <section id="my-avatar">
-                <figure class="float-right">
-                    <img src="images/my-avatar.jpg" alt="My Avatar">
-                    <figcaption>My chosen avatar.</figcaption>
-                </figure>
-                <h2>My Avatar</h2>
-                <p>The avatar I chose symbolizes resilience...</p>
-            </section>
+        <!-- My Avatar Section -->
+        <section id="my-avatar" class="content-section">
+            <h2>My Avatar</h2>
+            <figure>
+                <img src="images/my-avatar.jpg" alt="My Avatar">
+                <figcaption>Representation of resilience and adaptability.</figcaption>
+            </figure>
+            <p>The avatar I chose symbolizes resilience and adaptability...</p>
+        </section>
 
-            <section id="learning-experience">
-                <figure class="float-left">
-                    <img src="images/learning.jpg" alt="Learning Experience">
-                    <figcaption>Learning and growing every day.</figcaption>
-                </figure>
-                <h2>My Learning Experience</h2>
-                <p>Since beginning this course...</p>
-            </section>
-        </main>
-    </div>
+        <!-- My Learning Experience Section -->
+        <section id="learning-experience" class="content-section">
+            <h2>My Learning Experience</h2>
+            <figure>
+                <img src="images/learning.jpg" alt="Learning Experience Image">
+                <figcaption>Exploring new skills and opportunities in IT.</figcaption>
+            </figure>
+            <p>Since beginning this course, I have been introduced to the basics of HTML, CSS, and web development practices...</p>
+        </section>
+
+        <!-- Upcoming Events Table -->
+        <section>
+            <h2>My Upcoming Events</h2>
+            <table>
+                <caption>Schedule of Upcoming Learning Events</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Event</th>
+                        <th scope="col">Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nov 15, 2024</td>
+                        <td>HTML & CSS Workshop</td>
+                        <td>Dallas College</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 25, 2024</td>
+                        <td>Git & GitHub Basics</td>
+                        <td>Online</td>
+                    </tr>
+                    <tr>
+                        <td>Dec 1, 2024</td>
+                        <td>Web Accessibility Training</td>
+                        <td>Dallas College</td>
+                    </tr>
+                    <tr>
+                        <td>Dec 15, 2024</td>
+                        <td>JavaScript Essentials</td>
+                        <td>Online</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 10, 2025</td>
+                        <td>Project Presentation</td>
+                        <td>Dallas College</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>Thank you for visiting my page!</p>
+        <p>Thank you for visiting my page! I hope this gives you a glimpse into my journey, and I look forward to sharing more as I progress in my studies and career.</p>
+        <p>Visit <a href="https://www.dallascollege.edu" target="_blank">Dallas College</a> for more resources.</p>
+        <p>Email the <a href="mailto:webmaster@example.com">Webmaster</a> for any questions or feedback.</p>
     </footer>
-
 </body>
 </html>
