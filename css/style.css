@@ -1,56 +1,45 @@
-/* General Form Styling */
-form {
-    width: 60%;
-    margin: 0 auto; /* Centers the form horizontally */
-    background-color: #f0f8ff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+/* Reset */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
 }
 
-/* Form Elements Spacing */
-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 0 20px;
 }
 
-form input[type="text"],
-form textarea,
-form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+/* Navigation */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #333;
 }
 
-form input[type="submit"],
-form input[type="reset"] {
-    padding: 10px 20px;
-    font-size: 1rem;
+.main-nav ul li {
+    margin: 0;
+    padding: 10px 15px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-nav ul li a.active {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
     color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-form input[type="submit"]:hover,
-form input[type="reset"]:hover {
-    background-color: #0056b3;
-}
-
-/* Fieldset and Legend Styling */
-fieldset {
-    border: none;
-    margin-bottom: 20px;
-}
-
-legend {
-    font-size: 1.2rem;
-    font-weight: bold;
 }
