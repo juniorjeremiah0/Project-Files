@@ -57,3 +57,11 @@ section {
     clear: both;
     margin-bottom: 30px;
 }
+
+nav {
+    position: fixed; /* or sticky */
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Ensure visibility */
+    z-index: 1000; /* Keeps the menu above other elements */
+}
